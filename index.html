@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>DIGITMFERS</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="" style="color: rgb(255, 255, 255); font-family: 'VT323', monospace;">
+<div style="background-color: rgb(255, 255, 255) ;" class="container-fluid">
+    <header >
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark p-0"
+            style="background-color: black; color: white; opacity: 85% ;"
+            aria-label="Third navbar example">
+            <div class="container d-flex justify-content-center mt-2" style=" text-align: center;" >
+                
+                <h1 href="#" style="color:white; font-family: 'VT323', monospace;">DIGIT MFERS</h1>
+                
+
+
+               
+            </div>
+            
+        </nav>
+
+    </header>
+
+    <main>
+        <br><br><br>
+        <div class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-5 col-lg-4" >
+                        <img style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; border-radius: 25px!important; " src="./images/game.gif" class="img-fluid p-3 ">
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-6">
+
+                        <div class="p-3">
+                            <h1 >I AM MY DIGITS, MY DIGITS ARE ME.</h1>
+                            <h3 style="color:  rgb(45, 45, 45);line-height: 1.3;">
+                                 <br>
+                                DIGIT MFERS ARE "NON-FUNGIBLE TOKENS" ON
+THE ETHEREUM BLOCKCHAIN, INSPIRED BY MFERS & DOODLES.
+                                <br> 
+                            
+                            </h3>
+                                <br> 
+                                
+                                <h5 style="color: rgb(45, 45, 45)">OUR VISION IS TO BRING TOGETHER THE COMMUNITIES 10K CLUB AND OTHER NORMAL PFP COMMUNITIES AND HENCE THE NAME DIGIT MFERS.</h5>
+                                <p style="color: rgb(45, 45, 45)"> F*ck a roadmap. Feel free to use digit mfers any way you want.</p>
+
+                                <p style="color: rgb(45, 45, 45)">First 1000 digit mfers are allocated for the 10k club members and the remaining will be priced at 0.0069 eth </p>
+                                
+                                <p style="color: rgb(45, 45, 45)"> Note : DIGIT MFERS are not associated with og mfers or doodles or 10kClub</p>
+
+                               
+                                
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+       
+        <section class="text-center mb-2 mx-0 row justify-content-center" id="Buy">
+
+            <div class="col-10 col-md-8 col-lg-6 text-center card p-5 pb-3 rounded-50"
+                style="background-color: rgba(39, 39, 39, 0.253);">
+
+                <h1 style="font-family:'Bubblegum Sans', cursive;" class="display-4 font-weight-normal text-white">
+                    Buy Now</h1>
+                <br>
+                <div class="col-12">
+                    <div class="row m-0 d-flex justify-content-center mb-3">
+                        <div class="col-5 text-center"style="hight:40px;">
+                            <button type="button" id="connect-button"
+                                class="btn btn-outline-success text-white rounded-0 mb-3 ripple-surface"
+                                onclick="connect();">Connect</button>
+
+                            <div class="card bg-danger text-center m-auto">
+                                <small id="connect-info">Not connected</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="row m-0 d-flex justify-content-center mb-3">
+                            <div class="col-8"style="hight:40px;">
+                                <button type="button" class="btn btn-outline-primary btn-lg rounded-50 text-white w-100"
+                                    onclick="mint();">Mint</button>
+                            </div>
+                            
+                            <div class="col-4 me-2 align-self-center">
+                                <br>
+                                <div class="card bg-dark m-auto text-center" id="buyQuantity">
+                                    <span id="demo"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="range" id="buyQuantityRange" class="form-range"
+                            oninput="changeBuyQuantity(this.value)" onchange="changeBuyQuantity(this.value)" min="1"
+                            max="20" step="1" value="20">
+
+                    </div>
+                    <script>
+                        var slider = document.getElementById("buyQuantityRange");
+                        var output = document.getElementById("demo");
+                        output.innerHTML = slider.value;
+
+                        slider.oninput = function () {
+                            output.innerHTML = this.value;
+                        }
+                    </script>
+
+                    
+                    <small id="connect-quantityAllowed" class="h6 text-white-50">Left : <span checkSupply();
+                            class="text-white">-</span></small>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="pt-5  ">
+            <div class="container d-flex justify-content-center  col-md-6">
+                <div class="row ">
+                    <div style="text-align: center; " class="" >
+                        <h1  >WHY DIGITS ARE A BIG DEAL ?</h1>
+                        <p  style="color: rgb(45, 45, 45); ">The digits are the one "language" nearly everyone around the world understands, no matter their culture alphabet, linguistic background, or economic status. <br><span style="font-weight: 600;">DIGITS UNITE THE WORLD</span><br>If you believe that Web3 is the future of our global community and economy, then you might start to understand why ENS digit-based names would have a place of importance. Just take a step back and think globally, realizing how big the world is beyond your own limited local perspective while also realizing how web3 will connect us all more than ever before. You might start to see how digits actually really matter as a unifying "language". In the context of #ENS as a global cross-chain utility asset that enables or serves as of the following : <br> 
+                </p>
+                <l style="color: rgb(45, 45, 45); ">
+                    <li>IDENTITY</li>
+                    <li>BRAND</li>
+                    <li>USERNAME</li>
+                    <li>PAYMENT ROUTER</li>
+                    <li>EMAIL ROUTER</li>
+                </l>
+                <br>
+                <br>
+                <p style="color: rgb(45, 45, 45); ">Original thread <a href="https://twitter.com/ktrap/status/1566104862793691137?t=uVk63uKA0yty4WZtOBvm-A&s=19">here</a></p>
+                <p style="color: rgb(45, 45, 45) ;">*The digit mfers are not associated with 10k Club. But I AM MY DIGITS, MY DIGITS ARE ME</p>
+                <p style="color: rgb(45, 45, 45); font-weight: 600;">JOIN THE 10k CLUB NOW !</p> <br>
+                
+                <div class="div">
+                    <a href="https://twitter.com/10kClubOfficial" type="button" class="btn btn-primary">Twitter</a>
+                    <a  href="https://discord.com/invite/aUemBKUuZ5" type="button" class="btn btn-secondary">Discord</a>
+                    <a href="https://www.ens.vision/categories/10k-club" type="button" class="btn btn-warning">Ens vision</a>
+                </div>
+                
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+        <div class="pt-5">
+            <div class="container col-1">
+                <div class="row ">
+                    <div class=" w-auto mb-3">
+                        <h1>Gallery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <img style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; border-radius: 25px!important; " src="./images/landing.gif" class="img-fluid ">
+        </div>
+
+
+
+
+
+        
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a style="background-color:rgb(0, 0, 0) ; color:rgb(45, 45, 45)"  class="custom-button-small text-white" href="#">Back to top</a>
+            </p>
+
+            
+        </div>
+    </footer>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"
+        integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"
+        integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"
+        integrity="sha512-/Q6t3CASm04EliI1QyIDAA/nDo9R8FQ/BULoUFyN4n/BDdyIxeH7u++Z+eobdmr11gG5D/6nPFyDlnisDwhpYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/js/web3modal.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>
